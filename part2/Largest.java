@@ -1,7 +1,7 @@
 
 import java.util.Scanner;
 
-public class Loop {
+public class Largest {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
@@ -23,14 +23,19 @@ public class Loop {
         //         System.out.println("C " + c + " is the largest");
         //     }
         // }
-        int max = a;
-        if (b > max) {
-            max = b;
+
+        int max1 = Math.max(c  , Math.max(a, b) );
+        System.out.println("Maximum = "+ max1);
+
+
+        int max2 = a;
+        if (b > max2) {
+            max2 = b;
         }
-        if (c > max) {
-            max = c;
+        if (c > max2) {
+            max2 = c;
         }
-        System.out.println("Maximum = " + max);
+        System.out.println("Maximum = " + max2);
 
     }
 }
