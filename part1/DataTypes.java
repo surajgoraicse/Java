@@ -3,7 +3,7 @@ public class DataTypes{
         
         int num = 2434;
         double largeDecimal = 3473984.3473947;
-        float decimal = 3434.3435498754875;
+        float decimal = 3434.3435498754875f;
         long largeNum = 83493743454545L;
         boolean status = false;
 
