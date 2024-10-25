@@ -7,25 +7,25 @@ public class CheckCharacterCase {
         Scanner input = new Scanner(System.in);
         char ch = input.next().trim().charAt(0);
         System.out.println("character :  " + ch);
-        // if((int)ch >= 65 && (int)ch <= 90 ){
-        //     System.out.println("Uppercase");
-        // }
-        // else if ((int)ch >= 97 && (int)ch <= 122) {
-        //     System.out.println("Lowercase");
-
-        // }
-        // else{
-        //     System.out.println("Invalid input");
-        // }
-        if (ch >= 'a' && ch <= 'z') {
-            System.out.println("Lowercase");
-        } else if (ch >= 'A' && ch <= 'Z') {
+        if(ch >= 65 && ch <= 90 ){
             System.out.println("Uppercase");
-
-        } else {
-            System.out.println("Invalid input");
+        }
+        else if (ch >= 97 && ch <= 122) {
+            System.out.println("Lowercase");
 
         }
+        else{
+            System.out.println("Invalid input");
+        }
+        // if (ch >= 'a' && ch <= 'z') {
+        //     System.out.println("Lowercase");
+        // } else if (ch >= 'A' && ch <= 'Z') {
+        //     System.out.println("Uppercase");
+
+        // } else {
+        //     System.out.println("Invalid input");
+
+        // }
 
     }
 }

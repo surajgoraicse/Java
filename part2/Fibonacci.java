@@ -8,9 +8,7 @@ public class Fibonacci {
         Scanner input = new Scanner(System.in);
         System.out.print("Enter nth number : ");
         int n = input.nextInt();
-        input.close();  
-        // It's a good practice to close the Scanner after you're
-        // done with input to avoid resource leaks.
+
         
         if(n < 0){
             System.out.println("Invalid inputs");
