@@ -16,9 +16,6 @@ public class Pythogoras {
         int largest = Math.max(c,Math.max(a, b));
         int smallest = Math.min(c,Math.min(a, b));
         int middle = a + b + c - largest - smallest;
-
-        return (Math.sqrt(smallest * smallest + middle * middle) == largest);
-        
-
+        return (smallest * smallest + middle * middle == largest *  largest);
     }
 }
