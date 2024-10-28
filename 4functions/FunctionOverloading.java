@@ -10,6 +10,5 @@ public class FunctionOverloading {
 
     static void fun(double n) {
         System.out.println(n);
-        
     }
 }
