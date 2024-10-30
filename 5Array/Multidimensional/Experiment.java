@@ -1,3 +1,10 @@
+
+import java.util.Arrays;
+
+
+
+
+
 public class Experiment {
     public static void main(String[] args) {
         int[] arr1 = { 1, 2, 34, 34, 3, 4 };
@@ -9,12 +16,16 @@ public class Experiment {
     }
 
     static void display(int[][] arr) {
-        
-        for (int[] item : arr) {
-            for (int element : item) {
-                System.out.print(element + " ");
-            }
-            System.out.println();
+
+        // for (int[] item : arr) {
+        //     for (int element : item) {
+        //         System.out.print(element + " ");
+        //     }
+        //     System.out.println();
+        // }
+        for (int i = 0; i < arr.length; i++) {
+            System.out.println(Arrays.toString(arr[i]));
         }
+        
     }
 }
