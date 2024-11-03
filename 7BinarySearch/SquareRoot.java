@@ -1,10 +1,10 @@
-public class PerfectSquareRoot {
+public class SquareRoot {
     public static void main(String[] args) {
-        System.out.println(findRoot(169));
+        System.out.println(findRoot(35));
     }
 
     public static int findRoot(int n) {
-        int left = 0, right = n, mid;
+        int left = 0, right = n, mid = -1;
         while (left <= right) {
             mid = left + (right - left) / 2;
             if (mid * mid == n)
@@ -15,6 +15,6 @@ public class PerfectSquareRoot {
                 right = mid - 1;
             }
         }
-        return -1;
+        return mid;
     }
 }
