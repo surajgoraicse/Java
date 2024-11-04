@@ -3,8 +3,8 @@
 public class CeilingOfaNubmer {
 
     public static void main(String[] args) {
-        int[] nums = {2, 34, 45, 565, 64343, 4546565 ,938749387};
-        int target = 567;
+        int[] nums = {2, 34, 45, 565, 64343, 4546565, 938749387};
+        int target = 3;
         System.out.println(element(nums, target));
     }
 
@@ -23,15 +23,9 @@ public class CeilingOfaNubmer {
             }
 
         }
-
-        if (nums[mid - 1] < target) {
-            System.out.println("hello" + nums[mid]);
+        if (nums[mid] > target) {
             return nums[mid];
-        } else {
-            System.out.println("hi");
-            return nums[mid - 1];
         }
-
-        // return ans
+        return nums[mid + 1];
     }
 }
